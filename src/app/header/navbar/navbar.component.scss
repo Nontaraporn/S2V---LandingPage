@@ -1,0 +1,64 @@
+/*Navbar Style*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu' , sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+  
+    &.sticky {
+      padding: 30px 0;
+      background: crimson;
+    }
+  
+    .max-width {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .logo a {
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+  
+      span {
+        color: crimson;
+      }
+    }
+  
+    &.sticky .logo a span {
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+  
+    .menu li {
+      list-style: none;
+      display: inline-block;
+  
+      i {
+        color: #fff;
+        font-size: 35px;
+      }
+  
+      a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: crimson;
+        }
+      }
+    }
+  
+    &.sticky .menu li a:hover {
+      color: black;
+      transition: all 0.3s ease;
+    }
+  }

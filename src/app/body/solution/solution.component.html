@@ -1,0 +1,25 @@
+<section>
+    <div class="topic">
+        <div class="title">Solution</div>
+        <div>เทคโนโลยี AI ที่ตอบโจทย์การทำงานตามความต้องการของคุณ</div>
+    </div>
+    <div style="display: flex; justify-content: center;  width: 100%;">
+        <div class="column left">
+            <div *ngFor="let item of items;let index as i" style="display: flex;justify-content: center;">
+                <div class="card">
+                    <div class="title">{{item.title}}</div>
+                    <div class="detail">{{item.detail}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="column right">
+            <div *ngFor="let item of ['1','2']">
+                <div class="sample-card">
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>

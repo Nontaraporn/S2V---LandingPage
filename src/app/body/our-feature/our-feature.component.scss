@@ -1,0 +1,64 @@
+section{
+    background-color: aquamarine;
+    padding: 100px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .topic{
+        font-family: "Prompt";
+        text-align: center;
+        padding: 25px;
+        .title{font-size: 35px;font-weight: 500; padding: 10px;}
+        .detail{font-size: 18px;font-weight: 250; padding: 10px;}
+    }
+    .container{
+        width: 100%;
+        margin-bottom: 35px;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 0;
+        font-family: "Prompt";
+        .col-5{
+            width: 40%;
+            background-color: #01BFFB;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left{
+            width: 20%;
+            background-color: darkgoldenrod;
+            .sample-card{
+                height: 250px;
+                width: 300px;
+                background-color: aquamarine;
+                display: flex;
+                margin: 15px;
+                border-radius: 10%;
+            }
+        }
+        .right{
+            width: 60%;
+            background-color: chocolate;
+            display: flex;
+            flex-direction: column;
+            .card{
+                height: 250px;
+                width: 85%;
+                border-radius: 10px;
+                margin: 8px 0;
+
+                background-color: white;
+                box-shadow: 1px 1px 10px #01BFFB;
+                
+            }
+        }
+    }
+    
+}
