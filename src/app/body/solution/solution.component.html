@@ -3,9 +3,16 @@
         <div class="title">Solution</div>
         <div>เทคโนโลยี AI ที่ตอบโจทย์การทำงานตามความต้องการของคุณ</div>
     </div>
-    <div style="display: flex; justify-content: center;  width: 100%;">
+    <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;">
         <div class="column left">
-            <div *ngFor="let item of items;let index as i" style="display: flex;justify-content: center;">
+            <div *ngFor="let item of items;let index as i" 
+            style="
+                display: flex;
+                justify-content: flex-start;
+                ">
                 <div class="card">
                     <div class="title">{{item.title}}</div>
                     <div class="detail">{{item.detail}}</div>
@@ -13,10 +20,11 @@
             </div>
         </div>
         <div class="column right">
-            <div *ngFor="let item of ['1','2']">
-                <div class="sample-card">
-                
-                </div>
+            <div class="sample-card">
+                <iframe src="https://drive.google.com/file/d/1me2sX7bRujXo_fuJq36JhhoAUB7UDBC_/preview" alt="i"></iframe>
+            </div>
+            <div class="sample-card">
+                <iframe src="https://drive.google.com/file/d/13VfedBXJvOoO223_s4XGnuILsi_Z-hEg/preview" alt="i"></iframe>
             </div>
             
         </div>

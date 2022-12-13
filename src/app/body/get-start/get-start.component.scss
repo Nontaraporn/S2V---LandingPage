@@ -1,9 +1,14 @@
 section{
-    background-color: aquamarine;
+    // background-color: aquamarine;
     padding: 100px 0;
     height: 550px;
     display: flex;
     justify-content: center;
+    background-image: url('data/background_get-start.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
 }
 .column{
     width: 100%;
@@ -14,17 +19,22 @@ section{
     flex-direction: column;
 }
 .left{
-    background-color: darkcyan;
+    // background-color: darkcyan;
     font-family: "Prompt";
     width: 40%;
     .title{
         width: 58%;
-        font-weight: 300;
-        font-size: 19px;
+        font-family: 'Prompt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        
         h2{
             letter-spacing: 2.3px;
-            font-size: 35px;
             font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
         }
     }
     button{
@@ -48,11 +58,70 @@ section{
         font-size: 22px;
         font-family: "Prompt";
         color: white;
-        
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+    button:hover{
+        background-color: white;
+        color: #01BFFB;
     }
     
 }
 .right{
-    background-color: brown;
+    // background-color: brown;
     width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    .iframeOne{
+        display: flex;
+        background-color: cadetblue;
+        height: 286px;
+        width: 510px;
+        border-radius: 10px;
+        filter: drop-shadow(0px 10px 50px rgba(0, 176, 255, 0.15));
+        margin-top: 135px;
+        iframe{
+            width: inherit;
+            height: inherit;
+        }
+    }
+    .iframeTwo{
+        background-color: salmon;
+
+        position: absolute;
+
+        height: 117px;
+        width: 212px;
+        border-radius: 8px;
+        filter: drop-shadow(0px 10px 50px rgba(0, 176, 255, 0.15));
+        
+        margin-bottom: 155px;
+        margin-left: 430px;
+        background-image: url('data/mainVideo.svg');
+        background-position-y: -40px !important;
+        background-position: center;
+        cursor: pointer;
+        
+    }
+    .iframeThree{
+        background-color: lime;
+
+        position: absolute;
+
+        height: 111px;
+        width: 110px;
+        border-radius: 8px;
+        filter: drop-shadow(0px 10px 50px rgba(0, 176, 255, 0.15));
+    
+        margin-top: 150px;
+        margin-left: 530px;
+        background-image: url('data/character.svg');
+        background-position-y: -40px !important; 
+        background-position: center;
+        cursor: pointer;
+        
+    }
 }

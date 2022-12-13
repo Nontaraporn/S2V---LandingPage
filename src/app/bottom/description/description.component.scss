@@ -1,0 +1,66 @@
+section{
+    background-color: #008EFF;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Prompt";
+    font-style: normal;
+}
+.column{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.col-4{
+    width: 30%;
+    height: fit-content;
+    // background-color: brown;
+    margin:5px;
+    color: white;
+    .title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    ol{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 166.02%;
+    }
+    i{
+        display: flex;
+        position: absolute;
+        margin-left: -30px;
+        background-size: auto;
+        object-fit: cover;
+        width: 16px;
+        height: 16px;
+        
+        
+    }
+    i.local{
+        background-image: url('data/localIcon.svg');
+    }
+    i.phone{
+        background-image: url('data/phoneIcon.svg');
+    }
+    i.email{
+        background-image: url('data/emailIcon.svg');
+    }
+    button{
+        height: 24px;
+        width: 24px;
+        border-radius: 100%;
+        margin: 10px;
+        border:0px;
+        cursor: pointer;
+        background-color: #008EFF;
+    }
+    button.facebook{
+        background-image: url('data/facebookIcon.svg');
+    }
+    button.youtube{
+        background-image: url('data/youtubeIcon.svg');
+    }
+}

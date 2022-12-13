@@ -1,1 +1,32 @@
-<p>contact works!</p>
+<section>
+    <div class="column left">
+        <div class="title">
+            <h2>Let' <span>level up</span> your brand, together</h2>
+            <p>Technology isn't about the latest gadgets or apps. It's about what these things do for people. It's about bringing people together and making lives better.</p>
+        </div>
+    </div>
+
+    <div class="column right">
+        <div class="topic">
+            <h1>Get Started</h1>
+            <p>Step 1/2</p>
+        </div>
+        <div class="line"></div>
+        <div class="form"*ngFor="let item of ['ชื่อ-นามสกุล','เบอร์โทรศัพท์','Social Media หรือช่องทางติดตามอื่นๆ']">
+            <div class="title">{{item}}</div>
+            <input type="text" placeholder="{{item}}" style="padding: 0 5%;">
+        </div>
+        <div class="form">
+            <div class="title">คุณต้องการสร้างวีดีโอประเภทไหน</div>
+            <div class="dropdown">
+                <p>ประเภทของวิดิโอที่ต้องการสร้าง</p>
+                <div style="background-image: url('data/dropdownIcon.svg');"></div>
+                <i class="fa fa-sort-down" style="font-size:24px;color: black;"></i>
+            </div>
+        </div>
+        <div style="padding: 10%;">
+            <button>Next</button>
+        </div>
+    </div>
+    
+</section>

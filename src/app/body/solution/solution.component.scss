@@ -1,17 +1,33 @@
 section{
-    background-color: rgb(255, 236, 127);
+    // background-color: rgb(255, 236, 127);
     padding: 100px 0;
     height: 550px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: url('data/background_solution.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
     .topic{
-        font-family: "Prompt";
+        font-family: 'Prompt';
+        font-style: normal;
         text-align: center;
         padding: 25px;
-        .title{font-size: 35px;font-weight: 500; padding: 10px;}
-        .detail{font-size: 18px;font-weight: 250; padding: 10px;}
+        .title{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+            padding: 10px;
+        }
+        .detail{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px; 
+            padding: 10px;
+        }
     }
 }
 .column{
@@ -23,28 +39,36 @@ section{
     flex-direction: column;
 }
 .left{
-    background-color: darkcyan;
+    // background-color: darkcyan;
     font-family: "Prompt";
-    width: 60%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
     .card{
         width: 68%;
         background-color: white;
-        box-shadow: 1px 1px 10px #01BFFB;
+        box-shadow: 0px 10px 50px rgba(0, 176, 255, 0.15);
         border-radius: 10px;
         
         padding: 20px;
         margin: 25px;
         .title{
-            font-size: 28px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
         }
         .detail{
-            font-size: 18px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #5B6370;
         }
     }
     
 }
 .right{
-    background-color: brown;
+    // background-color: brown;
     width: 20%;
     .sample-card{
         height: 250px;

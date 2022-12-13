@@ -1,1 +1,79 @@
-<p>use-cases works!</p>
+<section>
+    <div class="topic">
+        <div class="title">Use Cases</div>
+        <div>ตอบโจทย์รูปแบบการทำงานที่หลากหลาย</div>
+    </div>
+    <div class="column" >
+        <div class="card">
+            <div class="c card1"></div>
+            <p>{{useCases[0].title}}</p>
+        </div>
+        <div class="card">
+            <div class="c card2"></div>
+            <p>{{useCases[1].title}}</p>
+        </div>
+        <div class="card">
+            <div class="c card3"></div>
+            <p>{{useCases[2].title}}</p>
+        </div>
+        <div class="card">
+            <div class="c card4"></div>
+            <p>{{useCases[3].title}}</p>
+        </div>
+        <div class="card">
+            <div class="c card5"></div>
+            <p>{{useCases[4].title}}</p>
+        </div>
+
+        <!-- <div class="card" *ngFor="let item of useCases">
+            <div style="background-image: url({{item.url}});"></div>
+            <img id="{{item.url}}" src="{{item.url}}" alt="error">
+            <iframe style=""></iframe>
+            <img src="data/item02.jpg" alt="error">
+            {{item.url}}
+            <p>{{item.title}}</p>
+        </div> -->
+    </div>
+    <div class="column">
+        <div class="col-10">
+            <div class="title">See use cases and example</div>
+            <div class="list-items">
+
+                <div class="card c1">
+                    <div class="description">
+                        <div style="padding: 20px;">
+                            <div class="title">{{content[0].title}}</div>
+                            <div class="detail">{{content[0].detail}}</div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="card c2">
+                    <div class="description">
+                        <div style="padding: 20px;">
+                            <div class="title">{{content[1].title}}</div>
+                            <div class="detail">{{content[1].detail}}</div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="card c3">
+                    <div class="description">
+                        <div style="padding: 20px;">
+                            <div class="title">{{content[2].title}}</div>
+                            <div class="detail">{{content[2].detail}}</div>
+                        </div>
+                    </div>      
+                </div>
+                
+                <!-- <div class="card" *ngFor="let item of content">
+                    <div class="description" style="background-image: url('{{item.url}}') !important;">
+                        
+                        <div style="padding: 20px;">
+                            <div class="title">{{item.title}}</div>
+                            <div class="detail">{{item.detail}}</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>

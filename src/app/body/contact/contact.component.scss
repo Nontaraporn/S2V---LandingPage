@@ -1,0 +1,163 @@
+section{
+    background-color: white;
+    padding: 100px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url('data/background-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+    // background-image: ;
+}
+.column{
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left{
+    // background-color: darkcyan;
+    
+    font-family: "Prompt";
+    width: 40%;
+    margin-right: 12%;
+    .title{
+        width: 58%;
+        font-weight: 300;
+        font-size: 19px;
+        h2, span{
+            letter-spacing: 2.3px;
+            font-size: 35px;
+            font-weight: 500;
+            
+        }
+        span{
+            color: #008EFF;
+        }
+    }
+    
+}
+.right{
+    width: 40%;
+    width: 547px;
+    height: 771px;
+    background: #FFFFFF;
+    /* 2 */
+    box-shadow: 0px 10px 50px rgba(0, 176, 255, 0.15);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    font-family: "Prompt";
+    .topic{
+        
+        width: 80%;
+        padding: 0px 58px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 48px;
+            letter-spacing: 0px;
+            
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #5B6370;
+        }
+    }
+    .line{
+        width: 80%;
+        height: 0px;
+        border: 1px solid rgba(50, 60, 76, 0.3);
+    }
+    .form{
+        width: 80%;
+        padding: 20px 0;
+        .title{
+            
+            padding: 10px 0;
+        }
+        input {
+            font-family: "Prompt";
+            border: none;
+            height: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+        }
+        input[type=text]:focus{
+            border: 3px solid #555;
+        }
+        .dropdown{
+            display: flex;
+            font-family: "Prompt";
+            border: none;
+            height: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+            border-radius: 10px;
+            justify-content: space-between;
+            padding: 0 3%;
+            cursor: pointer;
+            transition: 0.3s;
+
+            position: absolute;
+            width: 100%;
+            max-width: 320px;
+            p{
+                color: #323C4C99;
+            }
+        }
+        .dropdown:hover{
+            transition: 0.3s;
+            border-style: groove;
+        }
+        .dropdown:focus{
+            border-style: groove;
+        }
+        .result{
+
+        }
+    }
+    button{
+        box-sizing: border-box;
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        
+        gap: 10px;
+        width: 150px;
+        height: 60px;
+
+        /* GD PP */
+        border-radius: 10px;
+        background-color: #01BFFB;
+        border: none;
+        // font
+        font-size: 22px;
+        font-family: "Prompt";
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+}

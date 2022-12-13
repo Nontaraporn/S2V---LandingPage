@@ -1,33 +1,62 @@
 <section>
-    <div style="width:90%">
+    <div style="
+        width:90%; 
+        padding: 10px; 
+        border-radius: 40px;
+        background-color: #FFFFFF;
+        ">
         <div class="topic">
-            <div class="title">Solution</div>
-            <div>เทคโนโลยี AI ที่ตอบโจทย์การทำงานตามความต้องการของคุณ</div>
+            <div class="title">Our Feature</div>
+            <div>ฟีเจอร์การใช้งานที่ครบครันช่วยให้การทำงานของคุณสะดวกสบายและง่ายขึ้น ทุกที่ ทุกเวลา</div>
         </div>
         <div class="container" >
             
             <div class="left">
-                <div *ngFor="let item of [1,2,3,4]">
+                <div class="sample-card1"></div>
+                <div class="sample-card2"></div>
+                <!-- <div class="sample-card"></div> -->
+                <!-- <div *ngFor="let item of listItem">
                     <div class="sample-card"></div>
-                </div>
+                </div> -->
                 
             </div>
             <div class="right" >
-                <div *ngFor="let item of [1,2,3,4]" style="display: flex;justify-content: flex-end;">
-                    <div class="card"></div>
+                <div *ngFor="let item of listItem;index as i" style="display: flex;justify-content: flex-end;">
+                    <div class="card">
+                        <div class="title">{{item.title}}</div>
+                        <div class="detail">{{item.detail}}</div>
+                    </div>
                 </div>
             </div>
             
         </div>
-        <div class="container" style="background-color: rgb(208, 127, 255);font-size: 25px;">
+        <div class="container" style="font-size: 25px;">
             Professionalvideo production made easy, for everyone
         </div>
         <div class="container">
             <div class="col-5">
-                s
+                <div class="card">
+                    <div class="title">The old way</div>
+                    <div class="img-card1"></div>
+                    <div class="list-check">
+                        <div class="check"><div class="iconClose"></div><p>ใช้เวลาในการเตรียมตัวสำหรับการถ่ายทำนาน</p></div>
+                        <div class="check"><div class="iconClose"></div><p>ค่าใช้จ่ายสูงทั้งค่าอุปกรณ์ นักแสดงและโลเคชั่น</p></div>
+                        <div class="check"><div class="iconClose"></div><p>มีการทำงานที่ซับซ้อนและหลายขั้นตอน</p></div>
+                        <div class="check"><div class="iconClose"></div><p>เมื่อแก้ไขหรืออัปเดตงานมีการใช้เวลาและค่าใช้จ่ายเพิ่มขึ้น</p></div>
+                    </div>
+                </div>
             </div>
             <div class="col-5">
-                s
+                <div class="card">
+                    <div class="title">The new way</div>
+                    <div class="img-card2"></div>
+                    <div class="list-check">
+                        <div class="check"><div class="iconTrue"></div><p>ลดระยะเวลาในการทำงาน ประหยัดเวลามากขึ้น</p></div>
+                        <div class="check"><div class="iconTrue"></div><p>ราคาไม่แพง คิดราคาตามการใช้งาเริ่มต้น 50 บาท</p></div>
+                        <div class="check"><div class="iconTrue"></div><p>ง่ายและยืดหยุ่นต่อการใช้งาน</p></div>
+                        <div class="check"><div class="iconTrue"></div><p>แก้ไขหรืออัปเดตงานของคุณได้ตลอดเวลา</p></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
